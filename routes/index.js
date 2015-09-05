@@ -10,8 +10,10 @@ var Shunned = mongoose.model("Shunned", {
 
 function twitterClient(params) {
   return new Twitter({
-    consumer_key: process.env.CONSUMER_KEY,
-    consumer_secret: process.env.CONSUMER_SECRET,
+    // consumer_key: process.env.CONSUMER_KEY,
+    consumer_key: 'MDWiiB3CQ9s0hAzoZkdhYM4Gt',
+    consumer_secret: '08QR5iNPpI9vM3cbtXl3Lo82ZKFEWI7bx7z7iL7KKawm6Wxhon',
+    // consumer_secret: process.env.CONSUMER_SECRET,
     access_token_key: params.access_token_key,
     access_token_secret: params.access_token_secret
   });
